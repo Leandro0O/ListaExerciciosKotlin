@@ -26,7 +26,37 @@ class ListaSequencial {
         println("Informe um segundo número:")
         var n2 = scanner.nextInt()
 
-        println("Conssecutivo de ${n1} é ${n1 +1} e o conseccutivo de ${n2} é ${n2 + 1}")
+        println("Conssecutivo de ${n1} é ${n1 + 1} e o conseccutivo de ${n2} é ${n2 + 1}")
 
     }
+
+    //Criar um algoritmo que leia dois números inteiros e apresenta na tela a soma, subtração, multiplicação e divisão dos respectivos números.
+
+    fun ex03(): Unit {
+
+        println("Informe um número:")
+        var n1 = scanner.nextInt()
+        println("Informe outro número:")
+        var n2 = scanner.nextInt()
+
+        println("${n1} + ${n2} = ${(n1 + n2)}")
+        println("${n1} - ${n2} = ${(n1 - n2)}")
+        println("${n1} x ${n2} = ${(n1 * n2)}")
+        println("${n1} / ${n2} = ${(n1 / n2)}")
+    }
+
+    //    Criar um algoritmo que leia dois números inteiros e apresente na tela o resto da divisão do primeiro pelo segundo número.
+
+    fun ex04(): Unit {
+        println("Informe um número:")
+        var n1 = scanner.nextInt()
+
+        println("Informe outro numero:")
+        var n2 = scanner.nextInt()
+
+        println("${n1} % ${n2} = ${(n1%n2)}")
+
+    }
+
+
 }
