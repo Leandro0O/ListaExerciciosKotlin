@@ -2,6 +2,7 @@ package Sequencial
 
 import java.util.*
 import kotlin.math.roundToInt
+import kotlin.time.Duration.Companion.hours
 
 val scanner = Scanner(System.`in`)
 
@@ -159,5 +160,15 @@ class ListaSequencial {
     var n3 = scanner.nextDouble()
     var media = (n1+n2+n3) / 3
     println("A media é: ${String.format("%.2f",media)}")
+    }
+
+//    Criar um programa que calcule e apresente na tela a área de um retângulo. Fórmula: .
+    fun ex14(): Unit{
+        println("Informe a base do retangulo:")
+        var b = scanner.nextInt()
+        println("Informe a altura do triangulo:")
+        var h = scanner.nextInt()
+        var a = b * h
+        println("A base do retangulo é ${a}")
     }
 }
