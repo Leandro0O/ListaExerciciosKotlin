@@ -171,4 +171,74 @@ class ListaSequencial {
         var a = b * h
         println("A base do retangulo é ${a}")
     }
+
+//    Criar um programa que calcule e apresenta na tela a área de um triângulo. Fórmula: .
+    fun ex15() : Unit{
+        println("Informe a base do triangulo:")
+        var b = scanner.nextInt()
+        println("Informa a altura do triangulo")
+        var h = scanner.nextInt()
+        var a = (b * h) / 2
+        println("A area do triangulo é: ${a}")
+    }
+//    Criar um algoritmo que calcule e apresente na tela o volume de uma esfera de raio R, em que R é um dado fornecido pelo usuário.
+    fun ex16() : Unit{
+        println("Informe o raio da esfera:")
+        var r = Math.pow(scanner.nextDouble(),2.0)
+        var v = 4/3 * Math.PI * r
+        println("O volume da esfera é ${String.format("%.2f",v)}")
+    }
+
+    // Criar um algoritmo que calcule e apresente na tela a área de um trapézio.
+    fun ex17(): Unit{
+        println("Informe a base maior:")
+        var bm = scanner.nextInt()
+        println("Informe a base menor:")
+        var bme = scanner.nextInt()
+        println("Informe a altura:")
+        var h = scanner.nextInt()
+        var a = ((bm+bme) * h) / 2
+        println("A área do trapezio é: ${a}")
+    }
+
+    // Criar um algoritmo que calcule e apresente na tela o volume de uma caixa retangular,
+    fun ex18() : Unit{
+        println("Informe o comprimento da caixa:")
+        var c = scanner.nextInt()
+        println("Informe a largura da caixa:")
+        var l  = scanner.nextInt()
+        println("Informe a altura da caixa:")
+        var h = scanner.nextInt()
+        var v = c * l * h
+        println("O volume da caixa é de: ${v}")
+    }
+
+    // Criar um algoritmo que lê dois números, a base e o expoente, e imprime a potência (base elevada ao expoente).
+    fun ex19() : Unit{
+        println("Informe a base:")
+        var b = scanner.nextDouble()
+        println("Informe o expoente")
+        var e = scanner.nextDouble()
+        var  p = Math.pow(b,e)
+        println("${b} ^ ${e} = ${p}")
+    }
+
+    // Criar um algoritmo que lê dois números e imprime a soma dos quadrados dos dois números.
+    fun ex20() : Unit{
+        println("Informe o primeiro numero:")
+        var n1 = Math.pow(scanner.nextDouble(),2.0)
+        println("Informe  o segundo numero:")
+        var n2 = Math.pow(scanner.nextDouble(),2.0)
+        var soma = n1 + n2
+        println("A soma dos quadrados é ${String.format("%.2f",soma)}")
+    }
+    //    Criar um algoritmo que apresenta o valor da conversão em real (R$) de um valor lido em dólar (US$). O algoritmo deve solicitar o valor da cotação do dólar e também a quantidade de dólares disponível com o usuário.
+    fun ex21() : Unit{
+        println("Informe a quantidade de dolares: $ ")
+        var qd = scanner.nextInt()
+        println("Informe a cotação do dolar: R$ ")
+        var cd = scanner.nextDouble()
+        var tr = qd * cd
+        println("$ ${qd} = R$ ${tr}")
+    }
 }
