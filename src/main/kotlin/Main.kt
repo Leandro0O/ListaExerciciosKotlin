@@ -4,6 +4,6 @@ package Sequencial
 fun main() {
 
     val sequencia = ListaSequencial()
-    sequencia.ex19()
+    sequencia.ex23()
 
 }

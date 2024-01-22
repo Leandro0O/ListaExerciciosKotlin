@@ -72,25 +72,25 @@ class ListaSequencial {
         println("Anos: ${idade}\nMeses: ${meses}\nDias: ${dias}")
     }
 
-//    Criar um algoritmo que leia a idade de uma pessoa expressa em anos, mês e dias e apresente na tela a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
-    fun ex06() : Unit{
-    println("Informe sua idade em anos:")
-    var anos = scanner.nextInt()
+    //    Criar um algoritmo que leia a idade de uma pessoa expressa em anos, mês e dias e apresente na tela a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
+    fun ex06(): Unit {
+        println("Informe sua idade em anos:")
+        var anos = scanner.nextInt()
 
-    println("Informe sua idade em meses:")
-    var meses = scanner.nextInt()
+        println("Informe sua idade em meses:")
+        var meses = scanner.nextInt()
 
-    println("Informe sua idade em dias:")
-    var dias = scanner.nextInt()
+        println("Informe sua idade em dias:")
+        var dias = scanner.nextInt()
 
-    var total = (anos*365) + (meses + 30) + dias
+        var total = (anos * 365) + (meses + 30) + dias
 
-    println("Idade: ${total} dias")
+        println("Idade: ${total} dias")
     }
 
 //    Criar um algoritmo que leia a idade de uma pessoa expressa em dias e apresente na tela a idade dessa pessoa expressa em anos, meses e dias. Considerar ano com 365 dias e mês com 30 dias.
 
-    fun ex07(): Unit{
+    fun ex07(): Unit {
         println("Informe sua idade em dias:")
         var idade = scanner.nextInt()
 
@@ -150,20 +150,21 @@ class ListaSequencial {
         var quant = sf / sm
         println("O funcionario recebe ${quant.roundToInt()} salarios")
     }
-//    Criar um algoritmo que receba três notas de um aluno e apresente na tela a média aritmética entre essas notas.
-    fun ex13(): Unit{
+
+    //    Criar um algoritmo que receba três notas de um aluno e apresente na tela a média aritmética entre essas notas.
+    fun ex13(): Unit {
         println("Informe a primeira nota:")
-    var n1 = scanner.nextDouble()
-    println("Informe a segunda  nota:")
-    var n2 = scanner.nextDouble()
-    println("Informe a terceira nota:")
-    var n3 = scanner.nextDouble()
-    var media = (n1+n2+n3) / 3
-    println("A media é: ${String.format("%.2f",media)}")
+        var n1 = scanner.nextDouble()
+        println("Informe a segunda  nota:")
+        var n2 = scanner.nextDouble()
+        println("Informe a terceira nota:")
+        var n3 = scanner.nextDouble()
+        var media = (n1 + n2 + n3) / 3
+        println("A media é: ${String.format("%.2f", media)}")
     }
 
-//    Criar um programa que calcule e apresente na tela a área de um retângulo. Fórmula: .
-    fun ex14(): Unit{
+    //    Criar um programa que calcule e apresente na tela a área de um retângulo. Fórmula: .
+    fun ex14(): Unit {
         println("Informe a base do retangulo:")
         var b = scanner.nextInt()
         println("Informe a altura do triangulo:")
@@ -172,8 +173,8 @@ class ListaSequencial {
         println("A base do retangulo é ${a}")
     }
 
-//    Criar um programa que calcule e apresenta na tela a área de um triângulo. Fórmula: .
-    fun ex15() : Unit{
+    //    Criar um programa que calcule e apresenta na tela a área de um triângulo. Fórmula: .
+    fun ex15(): Unit {
         println("Informe a base do triangulo:")
         var b = scanner.nextInt()
         println("Informa a altura do triangulo")
@@ -181,32 +182,33 @@ class ListaSequencial {
         var a = (b * h) / 2
         println("A area do triangulo é: ${a}")
     }
-//    Criar um algoritmo que calcule e apresente na tela o volume de uma esfera de raio R, em que R é um dado fornecido pelo usuário.
-    fun ex16() : Unit{
+
+    //    Criar um algoritmo que calcule e apresente na tela o volume de uma esfera de raio R, em que R é um dado fornecido pelo usuário.
+    fun ex16(): Unit {
         println("Informe o raio da esfera:")
-        var r = Math.pow(scanner.nextDouble(),2.0)
-        var v = 4/3 * Math.PI * r
-        println("O volume da esfera é ${String.format("%.2f",v)}")
+        var r = Math.pow(scanner.nextDouble(), 2.0)
+        var v = 4 / 3 * Math.PI * r
+        println("O volume da esfera é ${String.format("%.2f", v)}")
     }
 
     // Criar um algoritmo que calcule e apresente na tela a área de um trapézio.
-    fun ex17(): Unit{
+    fun ex17(): Unit {
         println("Informe a base maior:")
         var bm = scanner.nextInt()
         println("Informe a base menor:")
         var bme = scanner.nextInt()
         println("Informe a altura:")
         var h = scanner.nextInt()
-        var a = ((bm+bme) * h) / 2
+        var a = ((bm + bme) * h) / 2
         println("A área do trapezio é: ${a}")
     }
 
     // Criar um algoritmo que calcule e apresente na tela o volume de uma caixa retangular,
-    fun ex18() : Unit{
+    fun ex18(): Unit {
         println("Informe o comprimento da caixa:")
         var c = scanner.nextInt()
         println("Informe a largura da caixa:")
-        var l  = scanner.nextInt()
+        var l = scanner.nextInt()
         println("Informe a altura da caixa:")
         var h = scanner.nextInt()
         var v = c * l * h
@@ -214,26 +216,27 @@ class ListaSequencial {
     }
 
     // Criar um algoritmo que lê dois números, a base e o expoente, e imprime a potência (base elevada ao expoente).
-    fun ex19() : Unit{
+    fun ex19(): Unit {
         println("Informe a base:")
         var b = scanner.nextDouble()
         println("Informe o expoente")
         var e = scanner.nextDouble()
-        var  p = Math.pow(b,e)
+        var p = Math.pow(b, e)
         println("${b} ^ ${e} = ${p}")
     }
 
     // Criar um algoritmo que lê dois números e imprime a soma dos quadrados dos dois números.
-    fun ex20() : Unit{
+    fun ex20(): Unit {
         println("Informe o primeiro numero:")
-        var n1 = Math.pow(scanner.nextDouble(),2.0)
+        var n1 = Math.pow(scanner.nextDouble(), 2.0)
         println("Informe  o segundo numero:")
-        var n2 = Math.pow(scanner.nextDouble(),2.0)
+        var n2 = Math.pow(scanner.nextDouble(), 2.0)
         var soma = n1 + n2
-        println("A soma dos quadrados é ${String.format("%.2f",soma)}")
+        println("A soma dos quadrados é ${String.format("%.2f", soma)}")
     }
+
     //    Criar um algoritmo que apresenta o valor da conversão em real (R$) de um valor lido em dólar (US$). O algoritmo deve solicitar o valor da cotação do dólar e também a quantidade de dólares disponível com o usuário.
-    fun ex21() : Unit{
+    fun ex21(): Unit {
         println("Informe a quantidade de dolares: $ ")
         var qd = scanner.nextInt()
         println("Informe a cotação do dolar: R$ ")
@@ -241,4 +244,26 @@ class ListaSequencial {
         var tr = qd * cd
         println("$ ${qd} = R$ ${tr}")
     }
+
+    //Criar um algoritmo que leia três valores inteiros e apresente na tela o valor da soma dos quadrados dos três valores lidos.
+    fun ex22(): Unit {
+        println("Informe o primeiro valor: ")
+        var v1 = Math.pow(scanner.nextDouble(),2.0)
+        println("Informe o segundo valor: ")
+        var v2 = Math.pow(scanner.nextDouble(),2.0)
+        println("Informe o terceiro valor: ")
+        var v3 = Math.pow(scanner.nextDouble(),2.0)
+        var soma = v1+ v2 + v3
+        println("A soma dos quadrados dos três valores é:\n ${soma}")
+
+    }
+
+    //Criar um algoritmo que leia os dias letivos de uma instituição qualquer, calcule e apresenta na tela a quantidade máxima de faltas que um aluno pode possuir. Um aluno pode faltar até 25% dos dias letivos.
+    fun ex23(){
+    println("Informe a quantidade de dias letivos:\n")
+        var dl = scanner.nextInt()
+        var qf = dl + (dl * .25) - dl
+        println("Você pode ter ${String.format("%.0f",qf)} faltas")
+    }
 }
+
